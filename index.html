@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Undertale</title>
+        <link rel="icon" type="imagem/png" href="heart.png" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript">
+            window.onload = function(){
+          var txtTitulo = '* Isso é um titulo';
+          var txt1 = document.getElementById("titulo");
+          
+          var speed = 100;
+          var cont = 0;
+    
+          function typeWriter () {
+            if(cont < txtTitulo.length){
+              txt1.innerHTML +=  txtTitulo.charAt(cont) ;
+              cont++;
+              setTimeout(typeWriter, speed);
+             }else{
+               cont = 0;
+             }
+            }
+           typeWriter();
+        };
+            </script>
+</head>
+<body>
+    <img src="sansandpapyrus.gif" id="personagem">
+    <img src="balao.png" id="balao">
+    <h2 id="textobalao"> Bem vindo ao site <br> da Mavi :D</h2>
+    <table>
+        <tr>
+            <td id="acttext">
+                <div id="titulo" class="titulo-principal"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#"><img src="vazio.png" id="fight" width="219px"></a>
+                <a href="sobre.html"><img src="vazio.png" id="act" width="219px"></a>
+                <a href="#"><img src="vazio.png" id="item" width="219px"></a>
+                <a href="#"><img src="vazio.png" id="mercy" width="219px"></a>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

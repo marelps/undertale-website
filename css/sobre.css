@@ -1,0 +1,114 @@
+body{
+    margin: 1px;
+    position: absolute;
+    background-color: #000;
+    background-image: url(ruins.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+@font-face {
+    font-family: Determination;
+    src: url('determination.otf')
+}
+@font-face {
+    font-family: PressStart2P;
+    src: url('PressStart2P.ttf')
+}
+#post{
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+#widget{
+    position: absolute;
+    top:60px;
+    left: 350px;
+}
+#status{
+    background-color: #000;
+    position: relative;
+    border: solid 7px #fff;
+    height: 165px;
+    width: 220px;
+    margin-bottom: 8px;
+}
+#menu{
+    background-color: #000;
+    position: relative;
+    border: solid 7px;
+    border-color: #fff;
+    height: 400px;
+    width: 220px;
+}
+#conteudo{
+    background-color: #000;
+    position: relative;
+    left: 250px;
+    top:10px;
+    border: solid 7px #fff;
+    height: 800px;
+    width: 530px;
+}
+#titulo{
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: PressStart2P;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+#titulopost{
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: PressStart2P;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+#texto{
+    position: relative;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: Determination;
+    font-size: 25px;
+    margin-left: 15px;
+    bottom: 5px;
+    margin-bottom: -18px;
+}
+.colchete { /*barra do fundo*/
+    float: right;
+    text-align: right;
+    position: relative;
+    right: 20px;
+    -webkit-transition-duration: .60s;
+    -moz-transition-duration: .60s;
+    -o-transition-duration: .60s;
+    transition-duration: .60s;
+    margin-top: 15px;
+    }
+    .colchete a { /*fonte do menu*/
+    color: #fff!important;
+    font-family: PressStart2P;
+    font-size: 23px;
+    text-decoration: none;
+    }
+    .colchete a::before {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s,
+    opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s,
+    opacity 0.2s;transition: transform 0.3s,
+    opacity 0.2s;
+    margin-right: 15px;
+    content: '♥';
+    color: red;
+    -webkit-transform: translatex(20px);
+    -moz-transform: translatex(20px);
+    transform: translatex(20px);
+    }
+    .colchete a:hover::before,.colchete a:focus::before {
+    opacity: 1; -webkit-transform: translatex(0px); -moz-transform: translatex(0px);transform: translatex(0px);
+    }
