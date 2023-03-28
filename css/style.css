@@ -1,0 +1,27 @@
+/* Primeiras definições */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    user-select: none; /* Desativa a seleção de texto do usuário*/
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center; 
+  justify-content: center;
+/*  background: #000;*/
+}
+/*
+body{
+    place-content: center;
+    place-items: center;
+    text-align: center;
+}*/
+a, a:visited{
+    color: inherit;
+}
+
+
+
