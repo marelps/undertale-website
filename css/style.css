@@ -1,27 +1,32 @@
 /* Primeiras definições */
-* {
+html{
     box-sizing: border-box;
-    margin: 0;
-    border: none;
-    user-select: none; /* Desativa a seleção de texto do usuário*/
+    height: 100%;
 }
 
-body {
-  display: flex;
-  min-height: 100vh;
-  align-items: center; 
-  justify-content: center;
-/*  background: #000;*/
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    user-select: none; /* Desativa a seleção de texto do usuário*/
 }
-/*
-body{
-    place-content: center;
-    place-items: center;
+body {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    background: #000;
     text-align: center;
-}*/
+    min-height: 100vh;
+}
+
+/* Conteúdo*/
+main {
+    display: inline-block;
+    position: relative;
+}
+
+/* Desativa cor de link - Para a segunda página*/
 a, a:visited{
     color: inherit;
 }
-
-
-
