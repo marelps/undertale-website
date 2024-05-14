@@ -7,13 +7,13 @@
 
 #acttext{
     border: solid 5px;
-    padding: 5%;
+    padding: 7%;
     border-color: #fff;
     font-family: Determination;
     color: white;
     font-size: 3em;
-    height: 200px;
-    
+    height: auto;
+    width: 20em;    
 }
 
 .titulo-principal{
@@ -71,38 +71,34 @@
 }
 
 
+.menu{
+    margin: 25px 0 0;
+    width: 219px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+}
 /* Botão menu - bottom */
 #fight{
     background-image: url(../img/fight.png);
-    background-size: 219px;
-    background-repeat: no-repeat;
 }
 #fight:hover{
     background-image: url(../img/fighthover.png);
 }
 #act{
-    margin-left: 68px;
-    background-size: 219px;
     background-image: url(../img/act.png); 
-    background-repeat: no-repeat;
 }
 #act:hover{
     background-image: url(../img/acthover.png);
 }
 #item{
-    margin-left: 68px;
-    background-size: 219px;
     background-image: url(../img/item.png);
-    background-repeat: no-repeat;
 }
 #item:hover{
     background-image: url(../img/itemhover.png);
 }
 #mercy{
-    margin-left: 68px;
-    background-size: 219px;
     background-image: url(../img/mercy.png);
-    background-repeat: no-repeat;
 }
 #mercy:hover{
     background-image: url(../img/mercyhover.png);
