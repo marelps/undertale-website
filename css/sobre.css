@@ -1,111 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-body{
-    margin: 1px;
-    position: absolute;
-    background-color: #000;
-    background-image: url(ruins.jpg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-}
+/* Importando fontes */
 @font-face {
     font-family: Determination;
-    src: url('src/determination.otf')
+    src: url('../scr/determination.otf')
 }
-#post{
-    position: absolute;
-    top: 50px;
-    left: 400px;
+/* Primeiras definições */
+html{
+    box-sizing: border-box;
+    height: 100%;
 }
-#widget{
-    position: absolute;
-    top:60px;
-    left: 350px;
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    user-select: none; /* Desativa a seleção de texto do usuário*/
 }
-#status{
-    background-color: #000;
-    position: relative;
-    border: solid 7px #fff;
-    height: 165px;
-    width: 220px;
-    margin-bottom: 8px;
-}
-#menu{
-    background-color: #000;
-    position: relative;
-    border: solid 7px;
-    border-color: #fff;
-    height: 400px;
-    width: 220px;
-}
-#conteudo{
-    background-color: #000;
-    position: relative;
-    left: 250px;
-    top:10px;
-    border: solid 7px #fff;
-    height: 800px;
-    width: 530px;
-}
-#titulo{
+body {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    background: #000;
+    background-image: url(../img/ruins.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-align: center;
+    min-height: 100vh;
     color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-family: PressStart2P;
-    font-size: 30px;
-    margin-left: 15px;
-    margin-top: 15px;
-    position: relative;
-}
-#titulopost{
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-family: PressStart2P;
-    font-size: 25px;
-    margin-left: 40px;
-    margin-top: 40px;
-    position: relative;
-}
-#texto{
-    position: relative;
-    color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: Determination;
-    font-size: 25px;
-    margin-left: 15px;
-    bottom: 5px;
-    margin-bottom: -18px;
+    
 }
-.colchete { /*barra do fundo*/
-    float: right;
-    text-align: right;
+
+/* Conteúdo*/
+main {
+    display: inline-block;
     position: relative;
-    right: 20px;
+    
+}
+
+footer {
+    display: inline-block;
+    position: absolute;
+    bottom: 4px;
+    font-size: 1em;
+}
+
+td{
+    padding-left: 20px;
+}
+
+a, a:visited{   color: #ff8015; }
+a:hover{    color: #FFFF00; }
+
+#widget-menu, #widget-status{
+    position: relative;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    padding: 2em;
+    background-color: #000;
+    border: solid 7px #fff;
+}
+
+#widget-status{    margin-bottom: 2em; }
+
+#titulo{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+ #texto{    font-size: 1.5em; }
+
+/* Menu */
+.menu-link { /*barra do fundo*/
+    text-align: left;
+    width: 7.6em;
     -webkit-transition-duration: .60s;
     -moz-transition-duration: .60s;
     -o-transition-duration: .60s;
     transition-duration: .60s;
-    margin-top: 15px;
     }
-    .colchete a { /*fonte do menu*/
+
+.menu-link a { /*fonte do menu*/
     color: #fff!important;
-    font-family: PressStart2P;
-    font-size: 23px;
+    font-size: 1.5em;
     text-decoration: none;
-    }
-    .colchete a::before {
+}
+
+.menu-link a::before {
     display: inline-block;
     opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s,
-    opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s,
-    opacity 0.2s;transition: transform 0.3s,
-    opacity 0.2s;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
     margin-right: 15px;
     content: '♥';
     color: red;
     -webkit-transform: translatex(20px);
     -moz-transform: translatex(20px);
     transform: translatex(20px);
-    }
-    .colchete a:hover::before,.colchete a:focus::before {
-    opacity: 1; -webkit-transform: translatex(0px); -moz-transform: translatex(0px);transform: translatex(0px);
-    }
+ }
+
+.menu-link a:hover::before,.menu-link a:focus::before {
+    opacity: 1; 
+    -webkit-transform: translatex(0px); 
+    -moz-transform: translatex(0px);
+    transform: translatex(0px);
+ }
