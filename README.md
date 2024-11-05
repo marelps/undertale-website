@@ -27,7 +27,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla tristiq
 
 <img src="https://i.imgur.com/HrctOaV.png" alt="Primeira tela do site"/>
 <img src="https://i.imgur.com/JgvJE2b.png" alt="Segunda tela do site"/>
-
+<img src="img/undertalesite.gif" alt="Gif animado da tela"/>
 
  ## Como Usar
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla tristique tortor, ac mollis ex eleifend at. Vivamus egestas eu magna id maximus. Mauris velit nisi, laoreet finibus sem sed, consectetur interdum nisi. Aenean justo enim, elementum nec sagittis eu, fermentum sit amet massa. Suspendisse quis enim nec mi facilisis aliquam. Ut mi massa, venenatis eget mauris nec, tempor cursus massa. Nunc tincidunt metus sed felis dictum ullamcorper. Nam pulvinar felis sed cursus lacinia. Etiam et tellus dolor.
